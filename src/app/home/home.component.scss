@@ -1,0 +1,19 @@
+$primary: #3587a4;
+$secondary: #c1dff0;
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+.card {
+  background-color: $primary;
+  color: white;
+  height: 100vh;
+  padding-left: 2em;
+  padding-right: 2em;
+  
+}
+.container {
+    display: flex;
+    // align-items: stretch;
+}
