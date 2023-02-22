@@ -9,11 +9,28 @@
   .nav-item {
     margin-top: 8px;
     color: #8899a6;
-    font-size: 1.3rem;
-    margin-left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
   }
-  .nav-item:hover {
+  .nav-item:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: rgb(236, 123, 217);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .nav-item:hover:after {
     color: #ffffff;
-    border-bottom: 2px solid rgb(236, 123, 217);
+    width: 100%;
+    left: 0;
   }
 }
