@@ -1,19 +1,33 @@
-$primary: #3587a4;
-$secondary: #c1dff0;
+$primary: #15202b;
+$secondary: white;
 
-p {
-  font-size: 1.3rem;
-  line-height: 1.7;
-}
-.card {
-  background-color: $primary;
-  color: white;
-  height: 100vh;
-  padding-left: 2em;
-  padding-right: 2em;
-  
-}
+// background, card, hover color, primary text, secondary text
+//  #15202B, #192734, #22303C, #FFFFFF, #8899A6
+
 .container {
+  display: flex;
+  .card {
+    background-color: $primary;
+    height: 100vh;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 100%;
     display: flex;
-    // align-items: stretch;
+    .nav-section {
+      width: 50%;
+    }
+    .gray {
+      max-width: 50%;
+      background-color: #192734;
+      padding: 0.5rem;
+      p {
+        font-size: 1.3rem;
+        line-height: 2;
+        color: #8899a6;
+      }
+      h1 {
+        color: #ffffff;
+      }
+    }
+  }
 }

@@ -1,0 +1,19 @@
+// background, card, hover color, primary text, secondary text
+//  #15202B, #192734, #22303C, #FFFFFF, #8899A6
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #15202b;
+  .nav-item {
+    margin-top: 8px;
+    color: #8899a6;
+    font-size: 1.3rem;
+    margin-left: 10px;
+  }
+  .nav-item:hover {
+    color: #ffffff;
+    border-bottom: 2px solid rgb(236, 123, 217);
+  }
+}
