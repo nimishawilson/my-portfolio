@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalSettingsService } from '../shared/global-settings.service';
 
 @Component({
   selector: 'app-home',
@@ -6,11 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  showInitialLoading: boolean = true;
+  showInitialLoading: boolean = false;
+
+  constructor(private globalSettingsService: GlobalSettingsService) {}
 
   ngOnInit() {
-    setTimeout(() => {
+    if (this.globalSettingsService.componentLoadedAlready) {
       this.showInitialLoading = false;
-    }, 5000);
+    } else {
+      this.globalSettingsService.componentLoadedAlready = true;
+      this.showInitialLoading = true;
+      setTimeout(() => {
+        this.showInitialLoading = false;
+      }, 5000);
+    }
   }
 }
