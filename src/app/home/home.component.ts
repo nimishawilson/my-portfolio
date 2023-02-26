@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GlobalSettingsService } from '../shared/global-settings.service';
+import { GlobalSettingsService } from '../shared/services/global-settings.service';
 
 @Component({
   selector: 'app-home',
