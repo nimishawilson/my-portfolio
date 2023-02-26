@@ -1,0 +1,25 @@
+$primary: #15202b;
+$secondary: #ffffff;
+
+// background, card, hover color, primary text, secondary text
+//  #15202B, #192734, #22303C, #FFFFFF, #8899A6
+
+.previous {
+  background-color: $secondary;
+  color: $primary;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}

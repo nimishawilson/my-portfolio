@@ -1,0 +1,14 @@
+$primary: #15202b;
+$secondary: white;
+
+.container {
+  background-color: $primary;
+  .btn-container {
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+  .pdf-container {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -8,6 +8,8 @@ import { InitialLoadingComponent } from './initial-loading/initial-loading.compo
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ResumeComponent } from './resume/resume.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     InitialLoadingComponent,
     HomeComponent,
     NavComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule​,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
     ],
   providers: [],
   bootstrap: [AppComponent]
