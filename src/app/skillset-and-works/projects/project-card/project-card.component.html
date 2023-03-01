@@ -1,13 +1,9 @@
 <div class="hvr-sweep-to-right card">
-    <h3>Access Line Integrated Intake System</h3>
-    ○ A system for recording the cases from clients and assign available attorneys to them.
-    ○ Integrated calendar component library that can display events on a month, week or day view.
-    ○ Created reusable custom components and implement custom validations
+    <h3> {{ projectHeading }} </h3>
+    <p>
+        {{ content }}
+    </p>
     <div class="badge-container">
-        <span class="badge"> Angular 13 </span>
-        <span class="badge"> PrimeFlex </span>
-        <span class="badge"> PrimeNG </span>
-        <span class="badge"> PrimeNG </span>
-        <span class="badge"> PrimeNG </span>
+        <span class="badge" *ngFor="let item of technologiesUsed"> {{ item }} </span>
     </div>
 </div>
